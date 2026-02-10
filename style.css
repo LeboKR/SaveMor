@@ -9,30 +9,37 @@ a{
     text-decoration: none;
 }
 
-.header{
+.header {
     display: flex;
     justify-content: space-between;
     border: 1px dashed black;
     background-color: rgb(65, 65, 244);
+    border-radius: 10px;
 }
 
-.header h1{
-    border: 1px dashed black;
+.header h1 {
     padding: 15px;
     margin: 10px;
 
 }
 
-.header nav{
- width: 600px;
-  align-items: baseline;
+.header h1 a {
+    text-decoration: none;
+    color: inherit;
+
 }
 
-.header nav ul{
+.header nav {
+ width: 35%;
+}
+
+.header nav ul {
     display: flex;
     flex-flow: left;
     justify-content: space-between;
     list-style-type: none;
+    padding-top: 15px;
+    height: 100%;
 
 }
 
@@ -40,6 +47,75 @@ a{
     color: inherit;
     height: 100%;
     font-size: 24px;
+    padding: 10px;
 
     
+}
+
+.header nav ul li a:hover{
+    background-color: rgb(93, 72, 162);
+    border-radius: 10px;
+}
+
+#specialsContainer{
+    background-color: rgb(116, 114, 245);
+    padding: 20px;
+    color: inherit;
+    margin: 10px;
+    border-radius: 10px;
+}
+
+#specialsContainer h2{
+    font-size: 30px;
+    text-decoration: underline;
+}
+
+#specialsContainer div{
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+    border: 1px dashed black;
+    margin: 50px 0px;
+    height: 400px;
+}
+
+#specialsImage{
+    width: 450px;
+    border-radius: 10px;
+}
+
+#specialsContainer p{
+    font-size: 20px;
+    width: 100%;
+    text-align: center;
+}
+
+.sideScrollCatalogues h3{
+    color: black;
+    width: 100%;
+    text-decoration: underline;
+    text-align: center;
+    line-height: 50px;
+    font-size: 30px;
+}
+
+.sideScrollCatalogues .sideScrollItems ul{
+    display: flex;
+    color: black;
+    flex-flow: row nowrap;
+    overflow-x: auto;
+    gap: 20px;
+    padding: 20px;
+}
+
+.sideScrollCatalogues .sideScrollItems ul li{
+    min-width: 33%;
+    height: 200px;
+    background-color: rgb(125, 129, 254);
+    height: 300px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
 }
