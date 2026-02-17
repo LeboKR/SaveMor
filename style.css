@@ -7,6 +7,7 @@ body{
 /*Base designs*/
 a{
     text-decoration: none;
+    color: inherit;
 }
 
 .header {
@@ -73,9 +74,36 @@ a{
 #specialsContainer div{
     display: flex;
     justify-content: space-evenly;
-    width: 100%;
-    margin: 50px 0px;
+    width: 80%;
+    padding: 20px;
+    margin: 50px auto;
     height: 400px;
+}
+
+#specialsText{
+    font-size: 30px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#specialsText span{
+    font-size: 30px;
+    border: 0;
+    color:rgb(65, 65, 244);
+    font-weight: bold;
+    background-color: thistle;
+    width: 200px;
+    margin: 10px auto;
+    padding: 8px 16px;
+    border-radius: 10px;
+}
+
+#specialsText span:hover{
+    background-color: rgb(65, 65, 244);
+    color: thistle;
+    cursor: pointer;
 }
 
 #specialsImage{
